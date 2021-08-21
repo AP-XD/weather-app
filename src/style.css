@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+html {
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(14, 12, 12, 0.719),
+    rgba(0, 7, 46, 0.856)
+  );
+
+  --image-gradient: linear-gradient(to top, rgb(0, 0, 0), rgb(27, 38, 104));
+
+  --imp-text-color: #20adff;
+}
+.main {
+  display: flex;
+}
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: var(--image-gradient);
+  padding-bottom: 30px !important;
+
+  padding-top: 30px !important;
+}
+.search {
+  height: fit-content;
+  width: 100%;
+}
+.search__form {
+  max-width: 453px;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: max-content !important;
+  margin-bottom: 1.5rem;
+}
+
+.search__input {
+  text-shadow: none;
+  font-size: 1rem;
+  height: 40px;
+  outline: none;
+  border: none;
+  width: 50%;
+  border: solid 2px transparent;
+  background-color: rgba(58, 94, 255, 0.404);
+
+  border-radius: 2px;
+  margin: 0 0 2 2;
+}
+.search__input:focus {
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.404);
+  outline: none;
+  border-bottom: solid 3px rgba(0, 0, 0, 0.589);
+}
+
+.search__submit {
+  height: 2.8rem;
+  width: 20%;
+  text-align: center;
+  background-color: transparent;
+  position: relative;
+}
+
+.search__button {
+  height: 2.5rem;
+  width: 20%;
+  padding: 0 2rem 0 1rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+
+  border: none;
+  transform: translate(-50%, -50%);
+}
+.search__button:hover {
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgba(0, 89, 255, 0.671);
+}
+.hehe {
+  width: 100%;
+
+  max-width: 500px;
+  height: max-content !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content {
+  width: 100%;
+  max-width: 500px;
+  height: max-content !important;
+  margin-top: 5rem;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background: url("./components/images/weather.jpg");
+  transition: all 0.4s ease-in;
+  top: 0;
+  position: absolute;
+  color: whitesmoke;
+  box-shadow: -1px 2px 26px 10px rgba(0, 0, 0, 0.7);
+}
+.tag {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 100%;
+  height: max-content !important;
+  display: block;
+}
+.title {
+  margin: 0;
+  max-width: 453px;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: center;
+  height: max-content !important;
+  background: linear-gradient(
+    to bottom left,
+    rgba(14, 12, 12, 0.719),
+    rgba(0, 7, 46, 0.856)
+  );
+}
+.main {
+  width: 600px;
+}
+.header_title {
+  max-width: 453px;
+  width: 100%;
+  height: max-content !important;
+
+  font-size: 1.75rem;
+}
+.weather-data__box {
+  padding-left: 1.5rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: max-content !important;
+}
+.weather-data__city {
+  color: #20adff;
+  font-weight: 500;
+}
+.weather-data {
+  box-sizing: border-box;
+  margin: 0;
+  height: max-content !important;
+  width: 100%;
+  max-width: 453px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.6;
+}
+.wrap {
+  height: max-content !important;
+  background: linear-gradient(
+    to bottom left,
+    rgba(26, 5, 148, 0.719),
+    rgba(0, 0, 0, 0.527)
+  );
+  padding-bottom: 2rem;
+  width: 100%;
+  height: max-content !important;
+}
+.sys {
+  text-align: left !important;
+  width: 50%;
+  padding-top: 1.75rem;
+  height: max-content !important;
+}
+.react-icons {
+  height: 10px;
+}
+p {
+  font-weight: 300;
+  margin-bottom: 20px;
+  height: 8px;
+  width: 100%;
+}
+p > img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  object-fit: contain;
+}
+.error {
+  color: red;
+  padding-left: 2rem;
+  text-shadow: none;
+  font-size:1.2em;
+  font-weight: 500;
+}.footer{
+  position: absolute;
+  bottom:0;
+  z-index:-1;
+}
